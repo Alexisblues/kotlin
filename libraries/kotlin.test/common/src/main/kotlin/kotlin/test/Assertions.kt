@@ -56,6 +56,274 @@ fun <@OnlyInputTypes T> assertNotEquals(illegal: T, actual: T, message: String? 
     asserter.assertNotEquals(message, illegal, actual)
 }
 
+/**
+ * Asserts that the contents of [expected] are equal to the contents of [actual], with an optional [message].
+ *
+ * @see Array.contentDeepEquals
+ */
+@SinceKotlin("1.3")
+fun <@OnlyInputTypes T> assertContentEquals(expected: Array<T>, actual: Array<T>, message: String? = null) {
+    asserter.assertContentEquals(message, expected, actual)
+}
+
+/**
+ * Asserts that the contents of [expected] are equal to the contents of [actual], with an optional [message].
+ *
+ * @see BooleanArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentEquals(expected: BooleanArray, actual: BooleanArray, message: String? = null) {
+    asserter.assertContentEquals(message, expected, actual)
+}
+
+/**
+ * Asserts that the contents of [expected] are equal to the contents of [actual], with an optional [message].
+ *
+ * @see ByteArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentEquals(expected: ByteArray, actual: ByteArray, message: String? = null) {
+    asserter.assertContentEquals(message, expected, actual)
+}
+
+/**
+ * Asserts that the contents of [expected] are equal to the contents of [actual], with an optional [message].
+ *
+ * @see CharArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentEquals(expected: CharArray, actual: CharArray, message: String? = null) {
+    asserter.assertContentEquals(message, expected, actual)
+}
+
+/**
+ * Asserts that the contents of [expected] are equal to the contents of [actual], with an optional [message].
+ *
+ * @see DoubleArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentEquals(expected: DoubleArray, actual: DoubleArray, message: String? = null) {
+    asserter.assertContentEquals(message, expected, actual)
+}
+
+/**
+ * Asserts that the contents of [expected] are equal to the contents of [actual], with an optional [message].
+ *
+ * @see FloatArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentEquals(expected: FloatArray, actual: FloatArray, message: String? = null) {
+    asserter.assertContentEquals(message, expected, actual)
+}
+
+/**
+ * Asserts that the contents of [expected] are equal to the contents of [actual], with an optional [message].
+ *
+ * @see IntArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentEquals(expected: IntArray, actual: IntArray, message: String? = null) {
+    asserter.assertContentEquals(message, expected, actual)
+}
+
+/**
+ * Asserts that the contents of [expected] are equal to the contents of [actual], with an optional [message].
+ *
+ * @see LongArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentEquals(expected: LongArray, actual: LongArray, message: String? = null) {
+    asserter.assertContentEquals(message, expected, actual)
+}
+
+/**
+ * Asserts that the contents of [expected] are equal to the contents of [actual], with an optional [message].
+ *
+ * @see ShortArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentEquals(expected: ShortArray, actual: ShortArray, message: String? = null) {
+    asserter.assertContentEquals(message, expected, actual)
+}
+
+/**
+ * Asserts that the contents of [expected] are equal to the contents of [actual], with an optional [message].
+ *
+ * @see UByteArray.contentEquals
+ */
+@SinceKotlin("1.3")
+@ExperimentalUnsignedTypes
+fun assertContentEquals(expected: UByteArray, actual: UByteArray, message: String? = null) {
+    asserter.assertContentEquals(message, expected, actual)
+}
+
+/**
+ * Asserts that the contents of [expected] are equal to the contents of [actual], with an optional [message].
+ *
+ * @see UShortArray.contentEquals
+ */
+@SinceKotlin("1.3")
+@ExperimentalUnsignedTypes
+fun assertContentEquals(expected: UShortArray, actual: UShortArray, message: String? = null) {
+    asserter.assertContentEquals(message, expected, actual)
+}
+
+/**
+ * Asserts that the contents of [expected] are equal to the contents of [actual], with an optional [message].
+ *
+ * @see UIntArray.contentEquals
+ */
+@SinceKotlin("1.3")
+@ExperimentalUnsignedTypes
+fun assertContentEquals(expected: UIntArray, actual: UIntArray, message: String? = null) {
+    asserter.assertContentEquals(message, expected, actual)
+}
+
+/**
+ * Asserts that the contents of [expected] are equal to the contents of [actual], with an optional [message].
+ *
+ * @see ULongArray.contentEquals
+ */
+@SinceKotlin("1.3")
+@ExperimentalUnsignedTypes
+fun assertContentEquals(expected: ULongArray, actual: ULongArray, message: String? = null) {
+    asserter.assertContentEquals(message, expected, actual)
+}
+
+/**
+ * Asserts that the contents of [actual] are not equal to the contents of [illegal], with an optional [message].
+ *
+ * @see Array.contentDeepEquals
+ */
+@SinceKotlin("1.3")
+fun <@OnlyInputTypes T> assertContentNotEquals(illegal: Array<T>, actual: Array<T>, message: String? = null) {
+    asserter.assertContentNotEquals(message, illegal, actual)
+}
+
+/**
+ * Asserts that the contents of [actual] are not equal to the contents of [illegal], with an optional [message].
+ *
+ * @see BooleanArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentNotEquals(illegal: BooleanArray, actual: BooleanArray, message: String? = null) {
+    asserter.assertContentNotEquals(message, illegal, actual)
+}
+
+/**
+ * Asserts that the contents of [actual] are not equal to the contents of [illegal], with an optional [message].
+ *
+ * @see ByteArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentNotEquals(illegal: ByteArray, actual: ByteArray, message: String? = null) {
+    asserter.assertContentNotEquals(message, illegal, actual)
+}
+
+/**
+ * Asserts that the contents of [actual] are not equal to the contents of [illegal], with an optional [message].
+ *
+ * @see CharArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentNotEquals(illegal: CharArray, actual: CharArray, message: String? = null) {
+    asserter.assertContentNotEquals(message, illegal, actual)
+}
+
+/**
+ * Asserts that the contents of [actual] are not equal to the contents of [illegal], with an optional [message].
+ *
+ * @see DoubleArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentNotEquals(illegal: DoubleArray, actual: DoubleArray, message: String? = null) {
+    asserter.assertContentNotEquals(message, illegal, actual)
+}
+
+/**
+ * Asserts that the contents of [actual] are not equal to the contents of [illegal], with an optional [message].
+ *
+ * @see FloatArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentNotEquals(illegal: FloatArray, actual: FloatArray, message: String? = null) {
+    asserter.assertContentNotEquals(message, illegal, actual)
+}
+
+/**
+ * Asserts that the contents of [actual] are not equal to the contents of [illegal], with an optional [message].
+ *
+ * @see IntArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentNotEquals(illegal: IntArray, actual: IntArray, message: String? = null) {
+    asserter.assertContentNotEquals(message, illegal, actual)
+}
+
+/**
+ * Asserts that the contents of [actual] are not equal to the contents of [illegal], with an optional [message].
+ *
+ * @see LongArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentNotEquals(illegal: LongArray, actual: LongArray, message: String? = null) {
+    asserter.assertContentNotEquals(message, illegal, actual)
+}
+
+/**
+ * Asserts that the contents of [actual] are not equal to the contents of [illegal], with an optional [message].
+ *
+ * @see ShortArray.contentEquals
+ */
+@SinceKotlin("1.3")
+fun assertContentNotEquals(illegal: ShortArray, actual: ShortArray, message: String? = null) {
+    asserter.assertContentNotEquals(message, illegal, actual)
+}
+
+/**
+ * Asserts that the contents of [actual] are not equal to the contents of [illegal], with an optional [message].
+ *
+ * @see UByteArray.contentEquals
+ */
+@SinceKotlin("1.3")
+@ExperimentalUnsignedTypes
+fun assertContentNotEquals(illegal: UByteArray, actual: UByteArray, message: String? = null) {
+    asserter.assertContentNotEquals(message, illegal, actual)
+}
+
+/**
+ * Asserts that the contents of [actual] are not equal to the contents of [illegal], with an optional [message].
+ *
+ * @see UShortArray.contentEquals
+ */
+@SinceKotlin("1.3")
+@ExperimentalUnsignedTypes
+fun assertContentNotEquals(illegal: UShortArray, actual: UShortArray, message: String? = null) {
+    asserter.assertContentNotEquals(message, illegal, actual)
+}
+
+/**
+ * Asserts that the contents of [actual] are not equal to the contents of [illegal], with an optional [message].
+ *
+ * @see UIntArray.contentEquals
+ */
+@SinceKotlin("1.3")
+@ExperimentalUnsignedTypes
+fun assertContentNotEquals(illegal: UIntArray, actual: UIntArray, message: String? = null) {
+    asserter.assertContentNotEquals(message, illegal, actual)
+}
+
+/**
+ * Asserts that the contents of [actual] are not equal to the contents of [illegal], with an optional [message].
+ *
+ * @see ULongArray.contentEquals
+ */
+@SinceKotlin("1.3")
+@ExperimentalUnsignedTypes
+fun assertContentNotEquals(illegal: ULongArray, actual: ULongArray, message: String? = null) {
+    asserter.assertContentNotEquals(message, illegal, actual)
+}
+
 /** Asserts that [expected] is the same instance as [actual], with an optional [message]. */
 fun <@OnlyInputTypes T> assertSame(expected: T, actual: T, message: String? = null) {
     asserter.assertSame(message, expected, actual)
@@ -222,6 +490,287 @@ interface Asserter {
      */
     fun assertNotEquals(message: String?, illegal: Any?, actual: Any?): Unit {
         assertTrue({ messagePrefix(message) + "Illegal value: <$actual>." }, actual != illegal)
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentEquals(message: String?, expected: Array<out Any?>, actual: Array<out Any?>): Unit {
+        assertTrue(
+            { messagePrefix(message) + "Expected <${expected.contentDeepToString()}, actual <${actual.contentDeepToString()}" },
+            actual.contentDeepEquals(expected)
+        )
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentEquals(message: String?, expected: BooleanArray, actual: BooleanArray): Unit {
+        assertTrue(
+            { messagePrefix(message) + "Expected <${expected.contentToString()}, actual <${actual.contentToString()}" },
+            actual.contentEquals(expected)
+        )
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentEquals(message: String?, expected: ByteArray, actual: ByteArray): Unit {
+        assertTrue(
+            { messagePrefix(message) + "Expected <${expected.contentToString()}, actual <${actual.contentToString()}" },
+            actual.contentEquals(expected)
+        )
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentEquals(message: String?, expected: CharArray, actual: CharArray): Unit {
+        assertTrue(
+            { messagePrefix(message) + "Expected <${expected.contentToString()}, actual <${actual.contentToString()}" },
+            actual.contentEquals(expected)
+        )
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentEquals(message: String?, expected: DoubleArray, actual: DoubleArray): Unit {
+        assertTrue(
+            { messagePrefix(message) + "Expected <${expected.contentToString()}, actual <${actual.contentToString()}" },
+            actual.contentEquals(expected)
+        )
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentEquals(message: String?, expected: FloatArray, actual: FloatArray): Unit {
+        assertTrue(
+            { messagePrefix(message) + "Expected <${expected.contentToString()}, actual <${actual.contentToString()}" },
+            actual.contentEquals(expected)
+        )
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentEquals(message: String?, expected: IntArray, actual: IntArray): Unit {
+        assertTrue(
+            { messagePrefix(message) + "Expected <${expected.contentToString()}, actual <${actual.contentToString()}" },
+            actual.contentEquals(expected)
+        )
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentEquals(message: String?, expected: LongArray, actual: LongArray): Unit {
+        assertTrue(
+            { messagePrefix(message) + "Expected <${expected.contentToString()}, actual <${actual.contentToString()}" },
+            actual.contentEquals(expected)
+        )
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentEquals(message: String?, expected: ShortArray, actual: ShortArray): Unit {
+        assertTrue(
+            { messagePrefix(message) + "Expected <${expected.contentToString()}, actual <${actual.contentToString()}" },
+            actual.contentEquals(expected)
+        )
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    @ExperimentalUnsignedTypes
+    fun assertContentEquals(message: String?, expected: UByteArray, actual: UByteArray): Unit {
+        assertTrue(
+            { messagePrefix(message) + "Expected <${expected.contentToString()}, actual <${actual.contentToString()}" },
+            actual.contentEquals(expected)
+        )
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    @ExperimentalUnsignedTypes
+    fun assertContentEquals(message: String?, expected: UShortArray, actual: UShortArray): Unit {
+        assertTrue(
+            { messagePrefix(message) + "Expected <${expected.contentToString()}, actual <${actual.contentToString()}" },
+            actual.contentEquals(expected)
+        )
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    @ExperimentalUnsignedTypes
+    fun assertContentEquals(message: String?, expected: UIntArray, actual: UIntArray): Unit {
+        assertTrue(
+            { messagePrefix(message) + "Expected <${expected.contentToString()}, actual <${actual.contentToString()}" },
+            actual.contentEquals(expected)
+        )
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    @ExperimentalUnsignedTypes
+    fun assertContentEquals(message: String?, expected: ULongArray, actual: ULongArray): Unit {
+        assertTrue(
+            { messagePrefix(message) + "Expected <${expected.contentToString()}, actual <${actual.contentToString()}" },
+            actual.contentEquals(expected)
+        )
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentNotEquals(message: String?, illegal: Array<out Any?>, actual: Array<out Any?>): Unit {
+        assertTrue({ messagePrefix(message) + "Illegal value: <${actual.contentDeepToString()}" }, !actual.contentDeepEquals(illegal))
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentNotEquals(message: String?, illegal: BooleanArray, actual: BooleanArray): Unit {
+        assertTrue({ messagePrefix(message) + "Illegal value: <${actual.contentToString()}" }, !actual.contentEquals(illegal))
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentNotEquals(message: String?, illegal: ByteArray, actual: ByteArray): Unit {
+        assertTrue({ messagePrefix(message) + "Illegal value: <${actual.contentToString()}" }, !actual.contentEquals(illegal))
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentNotEquals(message: String?, illegal: CharArray, actual: CharArray): Unit {
+        assertTrue({ messagePrefix(message) + "Illegal value: <${actual.contentToString()}" }, !actual.contentEquals(illegal))
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentNotEquals(message: String?, illegal: DoubleArray, actual: DoubleArray): Unit {
+        assertTrue({ messagePrefix(message) + "Illegal value: <${actual.contentToString()}" }, !actual.contentEquals(illegal))
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentNotEquals(message: String?, illegal: FloatArray, actual: FloatArray): Unit {
+        assertTrue({ messagePrefix(message) + "Illegal value: <${actual.contentToString()}" }, !actual.contentEquals(illegal))
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentNotEquals(message: String?, illegal: IntArray, actual: IntArray): Unit {
+        assertTrue({ messagePrefix(message) + "Illegal value: <${actual.contentToString()}" }, !actual.contentEquals(illegal))
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentNotEquals(message: String?, illegal: LongArray, actual: LongArray): Unit {
+        assertTrue({ messagePrefix(message) + "Illegal value: <${actual.contentToString()}" }, !actual.contentEquals(illegal))
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    fun assertContentNotEquals(message: String?, illegal: ShortArray, actual: ShortArray): Unit {
+        assertTrue({ messagePrefix(message) + "Illegal value: <${actual.contentToString()}" }, !actual.contentEquals(illegal))
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    @ExperimentalUnsignedTypes
+    fun assertContentNotEquals(message: String?, illegal: UByteArray, actual: UByteArray): Unit {
+        assertTrue({ messagePrefix(message) + "Illegal value: <${actual.contentToString()}" }, !actual.contentEquals(illegal))
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    @ExperimentalUnsignedTypes
+    fun assertContentNotEquals(message: String?, illegal: UShortArray, actual: UShortArray): Unit {
+        assertTrue({ messagePrefix(message) + "Illegal value: <${actual.contentToString()}" }, !actual.contentEquals(illegal))
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    @ExperimentalUnsignedTypes
+    fun assertContentNotEquals(message: String?, illegal: UIntArray, actual: UIntArray): Unit {
+        assertTrue({ messagePrefix(message) + "Illegal value: <${actual.contentToString()}" }, !actual.contentEquals(illegal))
+    }
+
+    /**
+     * Asserts that the specified value contents are not equal.
+     *
+     * @param message the message to report if the assertion fails.
+     */
+    @ExperimentalUnsignedTypes
+    fun assertContentNotEquals(message: String?, illegal: ULongArray, actual: ULongArray): Unit {
+        assertTrue({ messagePrefix(message) + "Illegal value: <${actual.contentToString()}" }, !actual.contentEquals(illegal))
     }
 
     /**
